@@ -12,6 +12,7 @@ build/
 develop-eggs/
 dist/
 downloads/
+Mixtral8x7B-Instruct/
 eggs/
 .eggs/
 lib/
