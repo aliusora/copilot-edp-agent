@@ -712,7 +712,7 @@ with st.expander("How this works"):
     """)
 
 # Sidebar settings
-st.sidebar.header("⚙️ Settings")
+st.sidebar.header("⚙️ Danger Zone: Settings (Do Not Modify Unless You Know What You're Doing)")
 temperature = st.sidebar.slider("Temperature", 0.0, 1.0, 0.2, 0.05)
 max_tokens = st.sidebar.slider("Max tokens", 64, 4096, 1500, 64)
 num_sources = st.sidebar.slider("Number of sources to retrieve", 1, 5, 3, 1)
