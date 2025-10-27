@@ -62,9 +62,13 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Flask stuff:
+# Flask + Streamlit stuff:
 instance/
 .webassets-cache
+.streamlit/
+
+# App-specific cache
+.doc_cache/
 
 # Scrapy stuff:
 .scrapy

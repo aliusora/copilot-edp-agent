@@ -1,6 +1,5 @@
-mcp
-httpx
-mistralai
-python-dotenv
-rich
-streamlit
+# Core dependencies
+streamlit>=1.28.0
+openai>=1.0.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
