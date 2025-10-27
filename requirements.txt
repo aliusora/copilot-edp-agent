@@ -3,3 +3,4 @@ httpx
 mistralai
 python-dotenv
 rich
+streamlit
