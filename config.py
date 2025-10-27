@@ -30,7 +30,7 @@ UNC_ENTERPRISE_SOURCES = [
         'summary': 'UNC Information Technology Services official guidance on Microsoft 365 Copilot deployment, access, and enterprise data protection for UNC-Chapel Hill users.'
     },
     {
-        'title': 'UNC Employee Handbook - Generative AI Policy',
+        'title': 'UNC Graduate Handbook - Generative AI Policy',
         'url': 'https://handbook.unc.edu/generativeai.html',
         'context': 'unc policy generative ai guidelines university',
         'summary': 'UNC-Chapel Hill institutional policy on the responsible use of generative AI tools, including guidelines for employees and faculty regarding data privacy, security, and acceptable use.'
