@@ -693,26 +693,27 @@ For UNC-specific questions, prioritize combining:
 # ----------------------------
 # UI Layout
 # ----------------------------
-st.title("🤖 Microsoft Copilot Chat: A Q&A Tool")
-st.subheader("Built By Ali Sora — NC TraCS Recruitment & Retention Program.")
-st.caption("Powered by GPT‑4o mini + Microsoft Learn Full Content Retrieval")
+st.title("🤖 Microsoft Copilot for Research Recruitment: A Q&A Tool")
+st.subheader("Built By Ali Sora")
+st.caption("Powered by GPT‑4o mini + Microsoft Learn Model Context Protocol + Vetted UNC/NIH Sources")
 
 with st.expander("How this works"):
     st.markdown("""
-- Uses **GPT‑4o mini** via OpenAI Responses API.
-- **Intelligently searches** Microsoft Learn with enhanced relevance scoring and filtering.
-- **Automatically includes UNC-specific sources** when queries reference UNC-Chapel Hill or NIH contexts.
-- **Automatically retrieves** and **fully parses** documentation using BeautifulSoup.
-- **Prioritizes authoritative sources**: Official Microsoft documentation, UNC institutional policies, NIH guidance, and high-relevance matches.
-- Extracts **complete article content** including headings, paragraphs, lists, code blocks, and tables.
-- **Smart caching**: Stores retrieved content for faster repeat queries.
-- Enforces **approved sources only**: answers strictly from fetched Microsoft, UNC, and NIH documentation.
-- Includes **citations** with links to original sources for further exploration.
-- No technical expertise required — just ask your question naturally.
+- Uses **GPT-4o mini** AI to answer your questions.
+- **Searches Microsoft's official documentation** and finds the most relevant and up-to-date information.
+- **Includes UNC-Chapel Hill and NIH sources** when your question is about university or research policies.
+- **Downloads and reads entire web pages** to get complete information, not just summaries.
+- **Prioritizes trusted sources**: Microsoft's official guides, UNC policies, NIH requirements, and other reliable documentation.
+- Pulls out **all the important content** from articles including main text, bullet points, examples, and tables.
+- **Saves information temporarily** so repeat questions load faster.
+- **Only uses approved sources**: answers come strictly from official Microsoft, UNC, and NIH documentation.
+- **Shows you where information comes from** with links so you can read more if needed.
+- Easy to use — just type your question in everyday language.
     """)
 
 # Sidebar settings
-st.sidebar.header("⚙️ Danger Zone: Do Not Modify Unless You Know What You're Doing")
+st.sidebar.header("⚙️ Danger Zone")
+st.sidebar.subheader("Do NOT Modify Any of the Parameters Below Unless You Know What You're Doing!")
 temperature = st.sidebar.slider("Temperature", 0.0, 1.0, 0.2, 0.05)
 max_tokens = st.sidebar.slider("Max tokens", 64, 4096, 1500, 64)
 num_sources = st.sidebar.slider("Number of sources to retrieve", 1, 5, 3, 1)
@@ -743,7 +744,7 @@ if cache_enabled:
 st.subheader("🧠 Ask your question")
 question = st.text_area(
     "Question", 
-    placeholder="For example: What is enterprise data protection in Microsoft 365 Copilot? Or: How does Copilot protect UNC's data?",
+    placeholder="For example: How does Copilot protect UNC's data?",
     height=100
 )
 
@@ -869,4 +870,4 @@ if submit:
     )
 
 st.markdown("---")
-st.caption("Automatically retrieves and fully parses Microsoft Learn documentation using BeautifulSoup for comprehensive content extraction. Enhanced with intelligent search filtering, relevance scoring, and UNC-Chapel Hill/NIH enterprise context for optimal results.")
+st.caption("This tool automatically finds and reads complete Microsoft documentation using Microsoft's new Learn Model Context Protocol. It includes special features for UNC-Chapel Hill and NIH users, with improved search and ranking to give you the best results.")
