@@ -145,7 +145,7 @@ class MicrosoftLearnMCP:
             response = self.session.get(
                 self.BASE_SEARCH_URL,
                 params=search_params,
-                timeout=10
+                timeout=30
             )
             response.raise_for_status()
             
