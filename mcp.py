@@ -112,7 +112,7 @@ class MicrosoftLearnMCP:
             if term in summary_lower:
                 score += 3
 
-        authoritative_paths = ['/copilot/', '/microsoft-copilot/', '/microsoft-copilot-service/', '/purview/', '/security/', '/compliance/']
+        authoritative_paths = ['/copilot/', '/microsoft-365/', '/microsoft-copilot/', '/microsoft-copilot-service/', '/purview/', '/security/', '/compliance/']
         for path in authoritative_paths:
             if path in url_lower:
                 score += 8
