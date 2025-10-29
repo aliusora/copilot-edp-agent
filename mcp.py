@@ -66,7 +66,7 @@ class MicrosoftLearnMCP:
         for src in relevant_sources:
             src.pop('_matches', None)
         
-        return relevant_sources[:3]
+        return relevant_sources[:5]
     
     def _enhance_query(self, query: str) -> str:
         """Enhance user query with relevant keywords for better search precision."""
@@ -381,7 +381,7 @@ class MicrosoftLearnMCP:
             unc_sources = self._get_relevant_unc_sources(query)
             if unc_sources:
                 documents = unc_sources + documents
-                documents = documents[:num_sources + 3]
+                documents = documents[:num_sources + 5]
         
         if not documents:
             st.warning("No highly relevant sources found. Try rephrasing your question or being more specific.")
