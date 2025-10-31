@@ -110,7 +110,7 @@ if cache_enabled:
 st.subheader("🧠 Ask your question")
 question = st.text_area(
     "Question", 
-    placeholder="For example: How does Copilot protect UNC's data?",
+    placeholder="For example: HWhat are some examples of how I can use Copilot for research recruitment?",
     height=100
 )
 
